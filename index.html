@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <!--
+        テンプレートそのままなので、特に見どころはないですよｗ
+    -->
+    <!-- https://startbootstrap.com/theme/resume -->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="YujiSoftware のポートフォリオです。" />
+        <meta name="author" content="YujiSoftware" />
+        <link rel="canonical" href="https://yuji.software/">
+        <title>@YujiSoftware</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Viewer.js -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.2/viewer.css" integrity="sha512-HGWrJz+Lr07phD0DNoLsSVwn3przno/eSLf1cGOrLzr6c7NUZROZJPhQdSPmLHNbsO0HP2UfUnpKTMiVxonEHw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script>
+FontAwesome.library.add({
+    prefix: 'fab',
+    iconName: 'qiita',
+    icon: [
+        512, 512, [], 'xxxx',
+        'M253 0C134.4 0 12 91 12 245c0 118.7 90.8 241.3 245 241.3 49.4 0 98.8-15.8 140.3-45.5l71.2 71.2 31.6-31.6-67-67.2c41.5-45.5 65.2-104.8 65.2-172C498.2 122.5 407.2 0 253 0zm0 43.5c112.7 0 201.7 87 201.7 199.7 0 96.8-75 199.6-199.7 199.6C130.5 442.8 55.3 342 55.3 245c0-126.4 101-201.5 197.7-201.5z'
+    ]
+}, {
+    prefix: 'fab',
+    iconName: 'hatena',
+    icon: [
+        512, 512, [], 'xxxx',
+        'M255.997 512C114.84 512 0 397.168 0 256 0 114.845 114.84 0 255.997 0 397.176 0 512 114.845 512 256c0 141.168-114.824 256-256.003 256Zm0-479.44C132.792 32.56 32.55 132.784 32.55 256c0 123.213 100.242 223.448 223.447 223.448 123.229 0 223.468-100.235 223.468-223.448 0-123.216-100.24-223.44-223.468-223.44zm29.82 97.03c-12.507-25.325-20.145-49.953-24.001-64.304v181.319c6.333 2.373 10.863 8.43 10.863 15.583 0 9.212-7.472 16.674-16.676 16.674-9.215 0-16.677-7.467-16.677-16.674 0-7.495 4.983-13.761 11.798-15.868V65.094c-3.844 14.316-11.487 39.062-24.053 64.496-19.596 39.637-44.025 74.601-44.025 74.601l15.623 213.783s14.847 16.568 57.745 16.591h.06c42.895-.023 57.75-16.59 57.75-16.59l15.62-213.784c-.008 0-24.436-34.962-44.027-74.6z'
+    ]
+}, {
+    prefix: 'fab',
+    iconName: 'spring',
+    icon: [
+        97, 97, [], 'xxxx',
+        'M88.4,5.6a42.32,42.32,0,0,1-5.2,9.1A48.46,48.46,0,1,0,15.5,84l1.8,1.6A48.41,48.41,0,0,0,96.8,52C98.2,39.8,94.5,24.2,88.4,5.6ZM22.5,84.4a4.12,4.12,0,1,1-.6-5.8A4.21,4.21,0,0,1,22.5,84.4ZM88.1,69.9C76.2,85.8,50.6,80.4,34.3,81.2c0,0-2.9.2-5.8.6,0,0,1.1-.5,2.5-1,11.5-4,16.9-4.8,23.9-8.4C68,65.7,81.1,51,83.7,35.8c-5,14.6-20.2,27.2-34,32.3C40.2,71.6,23.1,75,23.1,75l-.7-.4c-11.6-5.7-12-30.9,9.2-39,9.3-3.6,18.1-1.6,28.2-4,10.7-2.5,23.1-10.5,28.1-21C93.5,27.5,100.3,53.7,88.1,69.9Z'
+    ]
+}, {
+    prefix: 'fab',
+    iconName: 'golang',
+    icon: [
+        205, 76, [], 'xxxx',
+        'M161.5 76.7c-9.1-.2-17.4-2.8-24.4-8.8-5.9-5.1-9.6-11.6-10.8-19.3-1.8-11.3 1.3-21.3 8.1-30.2 7.3-9.6 16.1-14.6 28-16.7 10.2-1.8 19.8-.8 28.5 5.1 7.9 5.4 12.8 12.7 14.1 22.3 1.7 13.5-2.2 24.5-11.5 33.9-6.6 6.7-14.7 10.9-24 12.8-2.7.5-5.4.6-8 .9zm23.8-40.4c-.1-1.3-.1-2.3-.3-3.3-1.8-9.9-10.9-15.5-20.4-13.3-9.3 2.1-15.3 8-17.5 17.4-1.8 7.8 2 15.7 9.2 18.9 5.5 2.4 11 2.1 16.3-.6 7.9-4.1 12.2-10.5 12.7-19.1zm-56.9-14.9c-6.3 1.6-10.6 2.8-16.8 4.4-1.5.4-1.6.5-2.9-1-1.5-1.7-2.6-2.8-4.7-3.8-6.3-3.1-12.4-2.2-18.1 1.5-6.8 4.4-10.3 10.9-10.2 19 .1 8 5.6 14.6 13.5 15.7 6.8.9 12.5-1.5 17-6.6.9-1.1 1.7-2.3 2.7-3.7H89.6c-2.1 0-2.6-1.3-1.9-3 1.3-3.1 3.7-8.3 5.1-10.9.3-.6 1-1.6 2.5-1.6h36.4c-.2 2.7-.2 5.4-.6 8.1-1.1 7.2-3.8 13.8-8.2 19.6-7.2 9.5-16.6 15.4-28.5 17-9.8 1.3-18.9-.6-26.9-6.6-7.4-5.6-11.6-13-12.7-22.2-1.3-10.9 1.9-20.7 8.5-29.3C70.4 8.7 79.8 2.8 91.3.7c9.4-1.7 18.4-.6 26.5 4.9 5.3 3.5 9.1 8.3 11.6 14.1.6.9.2 1.4-1 1.7zM24.6 41.6c-.4 0-.5-.3-.3-.6l1.4-2.5c.2-.3.6-.6 1-.6h20c.4 0 .6.3.6.7l-.2 2.4c0 .4-.4.7-.7.7zM.4 32.4c-.4 0-.5-.2-.3-.5l2.1-2.7c.2-.3.7-.5 1.1-.5h45.6c.4 0 .6.3.5.6l-.8 2.4c-.1.4-.5.6-.9.6zm15.1-9.2c-.4 0-.5-.2-.3-.5l2.1-2.7c.2-.3.7-.5 1.1-.5h35.7c.4 0 .5.3.3.6l-1.7 2.6c-.2.3-.7.6-1 .6z'
+    ]
+}, {
+    prefix: 'fab',
+    iconName: 'ruby',
+    icon: [
+        128, 128, [], 'xxxx',
+        'm35.971 111.33 81.958 11.188c-9.374-15.606-18.507-30.813-27.713-46.144L35.971 111.33zm89.71-86.383c-2.421 3.636-4.847 7.269-7.265 10.907a67619.72 67619.72 0 0 0-24.903 37.485c-.462.696-1.061 1.248-.41 2.321 8.016 13.237 15.969 26.513 23.942 39.777 1.258 2.095 2.53 4.182 4.157 6.192l4.834-96.58-.355-.102zM16.252 66.22c.375.355 1.311.562 1.747.347 7.689-3.779 15.427-7.474 22.948-11.564 2.453-1.333 4.339-3.723 6.452-5.661 6.997-6.417 13.983-12.847 20.966-19.278.427-.395.933-.777 1.188-1.275 2.508-4.902 4.973-9.829 7.525-14.898-3.043-1.144-5.928-2.263-8.849-3.281-.396-.138-1.02.136-1.449.375-6.761 3.777-13.649 7.353-20.195 11.472-3.275 2.061-5.943 5.098-8.843 7.743-4.674 4.266-9.342 8.542-13.948 12.882a24.011 24.011 0 0 0-3.288 3.854c-3.15 4.587-6.206 9.24-9.402 14.025 1.786 1.847 3.41 3.613 5.148 5.259zm28.102-6.271-11.556 48.823 54.3-34.987-42.744-13.836zm76.631-34.846-46.15 7.71 15.662 38.096c10.221-15.359 20.24-30.41 30.488-45.806zM44.996 56.644l41.892 13.6c-5.25-12.79-10.32-25.133-15.495-37.737L44.996 56.644zM16.831 75.643 2.169 110.691l27.925-.825-13.263-34.223zm13.593 26.096.346-.076c3.353-13.941 6.754-27.786 10.177-42.272L18.544 71.035c3.819 9.926 7.891 20.397 11.88 30.704zm84.927-78.897c-4.459-1.181-8.918-2.366-13.379-3.539-6.412-1.686-12.829-3.351-19.237-5.052-.801-.213-1.38-.352-1.851.613-2.265 4.64-4.6 9.245-6.901 13.868-.071.143-.056.328-.111.687l41.47-6.285.009-.292zM89.482 12.288l36.343 10.054-6.005-17.11-30.285 6.715-.053.341zM33.505 114.007c-4.501-.519-9.122-.042-13.687.037-3.75.063-7.5.206-11.25.323-.386.012-.771.09-1.156.506 31.003 2.866 62.005 5.732 93.007 8.6l.063-.414-29.815-4.07c-12.384-1.691-24.747-3.551-37.162-4.982zM2.782 99.994c3.995-9.27 7.973-18.546 11.984-27.809.401-.929.37-1.56-.415-2.308-1.678-1.597-3.237-3.318-5.071-5.226-2.479 12.24-4.897 24.177-7.317 36.113l.271.127c.185-.297.411-.578.548-.897zm78.74-90.153c6.737-1.738 13.572-3.097 20.367-4.613.44-.099.87-.244 1.303-.368l-.067-.332-29.194 3.928c2.741 1.197 4.853 2.091 7.591 1.385z'
+    ]
+}, {
+    prefix: 'fab',
+    iconName: 'c',
+    icon: [
+        128, 128, [], 'xxxx',
+        'M64.002 0c-1.243 0-2.382.312-3.21.726L11.084 29.62c-1.76 1.036-3.004 3.623-3.004 5.59v57.684c0 1.071.202 2.32.912 3.412l-.188.11c.518.828 1.243 1.551 1.968 1.966l49.917 28.893c.828.518 1.967.726 3.21.726 1.242 0 2.381-.312 3.21-.726l49.708-28.893c1.76-1.036 3.003-3.623 3.003-5.59V35.106c0-.827-.099-1.732-.48-2.577l.377-.219a7.34 7.34 0 0 0-2.486-2.797L67.211.726C66.384.208 65.245 0 64.002 0Zm0 23.094c15.223 0 28.48 8.389 35.521 20.712l-13.462 7.767C81.71 43.806 73.426 38.628 64 38.628 50.022 38.628 38.63 50.02 38.63 64S50.02 89.372 64.002 89.372c9.424 0 17.71-5.178 22.059-12.842l13.357 7.87c-7.042 12.22-20.297 20.506-35.416 20.506-22.576 0-40.906-18.33-40.906-40.906s18.33-40.906 40.906-40.906z'
+    ]
+}, {
+    prefix: 'fab',
+    iconName: 'csharp',
+    icon: [
+        128, 128, [], 'xxxx',
+        'M64.002 0c-1.243 0-2.382.312-3.21.726L11.084 29.62c-1.76 1.036-3.004 3.623-3.004 5.59v57.684c0 1.071.202 2.32.912 3.412l-.188.11c.518.828 1.243 1.551 1.968 1.966l49.917 28.893c.828.518 1.967.726 3.21.726 1.242 0 2.381-.312 3.21-.726l49.708-28.893c1.76-1.036 3.003-3.623 3.003-5.59V35.106c0-.827-.099-1.732-.48-2.577l.377-.219a7.34 7.34 0 0 0-2.486-2.797L67.211.726C66.384.208 65.245 0 64.002 0Zm0 23.094c15.223 0 28.48 8.389 35.521 20.712l-13.462 7.767C81.71 43.806 73.426 38.628 64 38.628 50.022 38.628 38.63 50.02 38.63 64S50.02 89.372 64.002 89.372c9.424 0 17.71-5.178 22.059-12.842l13.357 7.87c-7.042 12.22-20.297 20.506-35.416 20.506-22.576 0-40.906-18.33-40.906-40.906s18.33-40.906 40.906-40.906Zm37.28 27.443h5.076l-1.244 6.317h3.936l1.242-6.317h4.971l-1.242 6.317h2.484v4.869h-3.416l-.932 4.451h4.348v4.869h-5.28l-1.243 6.213h-5.075l1.242-6.213h-3.934l-1.244 6.213h-4.97l1.243-6.213h-2.486v-4.869h3.418v.103l.933-4.451h-4.351v-4.869h5.283zm2.796 11.289-.93 4.451h3.934l.932-4.451Z'
+    ]
+}, {
+    prefix: 'fab',
+    iconName: 'silverlight',
+    icon: [
+        512, 512, [], 'xxxx',
+        'M256 0A256 256 0 0 0 0 256a256 256 0 0 0 256 256 256 256 0 0 0 256-256A256 256 0 0 0 256 0Zm43.38 80.984c25.36.729 46.6 8.143 66.515 22.32 26.937 19.179 51.026 60.542 45.906 78.829-7.016 25.06-39.979 33.656-113.076 29.49-55.744-3.177-80.104-.118-116.08 14.574-8.008 3.27-17.097 6.92-20.198 8.108l-5.638 2.16-6.903-7.694c-14.579-16.244-14.32-18.829 2.252-22.572 37.854-8.549 61.81-9.079 118.063-2.611 62.64 7.202 98.042 6.26 111.916-2.983 11.295-7.524 13.625-31.232 4.804-48.89-9.043-18.103-27.112-32.845-49.605-40.469-54.965-18.63-165.286 2.885-198.268 38.666-9.71 10.534-11.066 15.132-11.04 37.424l.02 19.393 16.35 40.804c8.993 22.442 16.546 41.91 16.786 43.264.639 3.606-2.046 3.515-15.079-.508-38.123-11.77-48.643-22.851-49.568-52.22-1.9-60.364 42.126-115.3 111.627-139.296 36.383-12.56 65.858-18.517 91.217-17.789zm85.938 97.948c5.533 0 3.5 2.006-4.44 4.384-8.95 2.682-20.437 9.226-30.08 17.135-6.549 5.373-11.407 7.193-11.407 4.276 0-5.79 35.618-25.795 45.927-25.795zm30.971 9.996c1.506-.118 1.967 3.9 1.967 12.875 0 22.713-6.803 53.894-15.772 72.289-6.022 12.35-8.061 11.469-3.576-1.547 5.442-15.79 8.906-47.974 6.598-61.291-1.06-6.111-.908-7.475 1.074-9.697 1.269-1.423 3.853-5.079 5.744-8.127 1.781-2.871 3.062-4.431 3.965-4.502zm-84.32 26.146c.615.158.948.705.935 1.674-.011.889-5.557 7.725-12.324 15.191-49.1 54.18-59.65 76.659-61.293 130.582-.805 26.434-1.158 29.711-3.867 35.891-4.309 9.83-15.955 20.307-24.64 22.17-13.609 2.918-33.615-1.69-56.089-12.918-46.976-23.469-80.947-80.465-80.947-135.814 0-12.664 1.02-14.067 4.545-6.25 1.294 2.869 4.578 7.227 7.297 9.683l4.943 4.467-1.314 9.447c-4.788 34.426 19.635 79.217 56.703 103.99 24.36 16.28 40.42 17.813 51.727 4.936 5.524-6.292 6.627-8.73 14.359-31.725 16.63-49.457 46.986-98.567 88.465-143.12 5.257-5.648 9.653-8.678 11.5-8.204zm-191.684 8.469c1.205-.137 6.152 5.486 16.77 18.416 25.027 30.478 60.47 84.754 61.529 94.227.4 3.576 4.419 9.698 5.805 8.841.59-.365.203-2.744-.86-5.287-3.434-8.218-1.832-9.063 5.643-2.976 3.733 3.04 6.789 6.387 6.789 7.437 0 4.022-14.664 43.775-17.916 48.57-4.003 5.903-7.973 8.822-10.158 7.471-6.149-3.8-40.302-95.273-36.858-98.717 2.369-2.368 15.119 6.162 28.79 19.262 16.325 15.644 18.66 15.976 4.4.625-9.87-10.623-25.272-22.096-33.155-24.697-3.769-1.244-4.669-2.486-7.367-10.149-2.697-7.662-14.03-37.022-21.957-56.888-1.554-3.896-2.178-6.053-1.455-6.135zm243.49 51.42c.21-.03.354-.007.432.07 2.535 2.535-22.846 34.525-46.59 58.72-31.177 31.773-13.815 20.17 23.225-15.519 20.563-19.814 29.68-27.578 36.728-31.279 1.067-.56-2.611 3.207-8.174 8.373-5.562 5.166-20.689 19.935-33.615 32.82-27.79 27.704-40.16 37.306-62.506 48.52-14.71 7.383-17.744 9.504-26.793 18.744-5.612 5.73-9.868 9.256-9.459 7.834.41-1.422 1.667-5.097 2.793-8.166 1.127-3.069 2.208-9.589 2.403-14.49.452-11.362 1.041-11.795 6.082-4.469 2.28 3.314 4.596 5.537 5.148 4.94.552-.598 6.99-8.65 14.305-17.895 15.419-19.484 44.302-49.418 61.98-64.236 13.617-11.414 30.908-23.523 34.041-23.967zm-192.16 105.664c1.202.006 10.73 18.15 10.73 20.434 0 1.939-9.854 1.91-13.898-.04-4.396-2.12-1.553-20.42 3.168-20.394zm79.817 13.572c.886.163 1.266 1.63 1.037 4.422-.699 8.528-8.418 20.357-16.99 26.035-4.971 3.293-9.176 4.826-9.176 3.348 0-.25.535-2.14 1.187-4.201.653-2.062 1.522-5.292 1.932-7.178.495-2.276 2.648-4.544 6.41-6.748 3.392-1.988 7.354-5.95 9.873-9.875 2.607-4.063 4.587-6.012 5.727-5.803zm-26.905 24.674c1.954.204.876 2.64-3.261 7.27-5.162 5.777-18.169 6.563-31.537 1.908-12.018-4.185-14.324-6.696-4.797-5.22 12.647 1.958 25.849 1.19 32.808-1.91 3.35-1.491 5.615-2.17 6.787-2.048z'
+    ]
+});
+        </script>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">@YujiSoftware</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About -->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-3" id="name">
+                        <span class="d-block d-lg-none"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+                        <span class="text-primary">Yuji</span>
+                        <span>Software</span>
+                    </h1>
+                    <p class="lead mb-5">関東在住のソフトウェアエンジニアです。</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://github.com/YujiSoftware"><i class="fab fa-github" title="GitHub"></i> </a>
+                        <a class="social-icon" href="https://twitter.com/YujiSoftware"><i class="fab fa-twitter" title="Twitter"></i> </a>
+                        <a class="social-icon" href="https://qiita.com/YujiSoftware"><i class="fab fa-qiita" title="Qiita"></i> </a>
+                        <a class="social-icon" href="https://yujisoftware.hatenablog.com/"><i class="fab fa-hatena" title="Hatena Blog"></i> </a>
+                        <a class="social-icon" href="https://www.slideshare.net/YujiSoftware"><i class="fab fa-slideshare" title="SlideShare"></i> </a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Products -->
+            <section class="resume-section" id="products">
+                <div class="resume-section-content">
+                    <h2 class="mb-0">Products</h2>
+                    <div class="subheading mb-5">
+                        プロダクト
+                    </div>
+                        <div class="mb-5">
+                            <h3 class="mb-0 text-transform-none">Copy Text with Alt-Click</h3>
+                            <div class="subheading mb-3 text-capitalize">Browser extension</div>
+                            <p>ダウンロード数、一万人突破！</p>
+                            <p>「Alt キー押しながらクリック」で、そのクリックした箇所にあるテキストをコピーできるようになるブラウザ拡張です。</p>
+                            <p>
+                                <a href="https://addons.mozilla.org/ja/firefox/addon/copy-text-without-selecting/"><i class="fab fa-firefox"></i> Firefox add-ons</a> / 
+                                <a href="https://chrome.google.com/webstore/detail/copy-text-with-alt-click/obhagoegpnbklgknnmbglghkfdidegkl"><i class="fab fa-chrome"></i>  Chrome Web Store</a> / 
+                                <a href="https://github.com/YujiSoftware/copy-text-without-selecting"><i class="fab fa-github" title="GitHub"></i> Source Code</a>
+                            </p>
+                        </div>
+                        <div class="mb-5">
+                            <h3 class="mb-0 text-transform-none">Java API-Redirector</h3>
+                            <div class="subheading mb-3 text-capitalize">Browser extension</div>
+                            <p>Java SE API ドキュメント (Javadoc) のページを開いた際に、最新バージョンに自動的にリダイレクトしてくれるブラウザ拡張です。</p>
+                            <p>
+                                <a href="https://addons.mozilla.org/ja/firefox/addon/javaapi-redirector/"><i class="fab fa-firefox"></i> Firefox add-ons</a> / 
+                                <a href="https://chrome.google.com/webstore/detail/javaapi-redirector/kildmhgekjfidnaohdmopdcoibigchkj?hl=ja"><i class="fab fa-chrome"></i>  Chrome Web Store</a> / 
+                                <a href=""><i class="fab fa-github" title="GitHub"></i> Source Code</a>
+                            </p>
+                        </div>
+                        <div class="mb-5">
+                            <h3 class="mb-0 text-transform-none">AtCoder Unit Test</h3>
+                            <div class="subheading mb-3 text-capitalize">Browser extension</div>
+                            <p>AtCoder の問題ページから、ユニットテストを生成するブラウザ拡張です。</p>
+                            <p>
+                                <a href="https://addons.mozilla.org/ja/firefox/addon/ac-unit-test/"><i class="fab fa-firefox"></i> Firefox add-ons</a> / 
+                                <a href="https://chrome.google.com/webstore/detail/atcoder-unit-test/lmahhninbclefepjbcdfbcjnancipfmi?hl=ja"><i class="fab fa-chrome"></i>  Chrome Web Store</a> / 
+                                <a href="https://github.com/YujiSoftware/ac-unit-test"><i class="fab fa-github" title="GitHub"></i> Source Code</a>
+                            </p>
+                        </div>
+                        <div class="mb-5">
+                            <h3 class="mb-0 text-transform-none">勉強会スライドbot</h3>
+                            <div class="subheading mb-3 text-capitalize">Twitter bot</div>
+                            <p>技術系の勉強会のスライドをツイートする Twitter ボットです。</p>
+                            <p>
+                                <a href="https://twitter.com/tech_slideshare"><i class="fab fa-twitter"></i> @tech_slideshare</a> / 
+                                <a href="https://yujisoftware.hatenablog.com/entry/20161129/1480429483"><i class="far fa-file-alt"></i> 紹介ページ</a> / 
+                                <a href="https://github.com/YujiSoftware/TechSlideshare"><i class="fab fa-github" title="GitHub"></i> Source Code</a>
+                            </p>
+                        </div>
+                        <div class="mb-5">
+                            <h3 class="mb-0 text-transform-none">Excelインクリメンタルサーチ2</h3>
+                            <div class="subheading mb-3 text-capitalize">Tool</div>
+                            <p>Excel の表を HTML にエクスポートして、ブラウザ上でインクリメンタルサーチできるようにしてくれるツールです。</p>
+                            <p>
+                                <a href="http://hp.vector.co.jp/authors/VA049605/excel_incremental_search.html"><i class="far fa-file-alt"></i> 紹介ページ</a>
+                            </p>
+                        </div>
+                        <div class="mb-5">
+                            <h3 class="mb-0 text-transform-none">Excel マクロで Redmine の情報取得</h3>
+                            <div class="subheading mb-3 text-capitalize">Excel VBA</div>
+                            <p>Excel マクロ(VBA)で Redmine の情報を取得して、表にまとめるツールです。</p>
+                            <p>CSV でインポートするのと異なり、常に最新の情報を反映できます。</p>
+                            <p>
+                                <a href="https://yujisoftware.hatenablog.com/entry/20130421/1366543773"><i class="far fa-file-alt"></i> 紹介ページ</a>
+                            </p>
+                        </div>
+                        <div class="mb-5">
+                            <h3 class="mb-0">ansible-mackerel-module</h3>
+                            <div class="subheading mb-3 text-capitalize">Ansible plugin</div>
+                            <p>Mackerel の情報を取得したり、ステータスを設定したりするための Ansible プラグインです。</p>
+                            <p>
+                                <a href="https://yujisoftware.hatenablog.com/entry/ansible-mackerel-module"><i class="far fa-file-alt"></i>  紹介ページ</a> / 
+                                <a href="https://github.com/YujiSoftware/ansible-mackerel-module"><i class="fab fa-github" title="GitHub"></i> Source Code</a>
+                            </p>
+                        </div>
+                        <div class="mb-5">
+                            <h3 class="mb-0 text-transform-none">msg2txt</h3>
+                            <div class="subheading mb-3 text-capitalize">Samaple program</div>
+                            <p>Outlook のメールファイル（.msg ファイル）をテキストに展開するツールです。</p>
+                            <p>Windows / Linux / Mac に対応しています。（Outlook は不要）</p>
+                            <p>
+                                <a href="https://yujisoftware.hatenablog.com/entry/msg2txt"><i class="far fa-file-alt"></i> 紹介ページ</a> / 
+                                <a href="https://github.com/YujiSoftware/msg2txt"><i class="fab fa-github" title="GitHub"></i> Source Code</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience -->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-0">Experience</h2>
+                    <div class="subheading mb-5">
+                        経歴
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">インターネット広告業</h3>
+                            <div class="subheading mb-3 text-capitalize">Java, Spring Framework, Go, PHP, Symfony, Ruby, C, Jenkins</div>
+                            <ul class="list-inline dev-icons">
+                                <li class="list-inline-item"><i class="fab fa-java" title="Java"></i> </li>
+                                <li class="list-inline-item"><i class="fab fa-spring" title="Spring Framework"></i> </li>
+                                <li class="list-inline-item"><i class="fab fa-fw fa-golang" title="Go"></i> </li>
+                                <li class="list-inline-item"><i class="fab fa-php" title="PHP"></i> </li>
+                                <li class="list-inline-item"><i class="fab fa-symfony" title="Symfony"></i> </li>
+                                <li class="list-inline-item"><i class="fab fa-ruby" title="Ruby"></i> </li>
+                                <li class="list-inline-item"><i class="fab fa-c" title="C"></i> </li>
+                                <li class="list-inline-item"><i class="fab fa-jenkins" title="Jenkins"></i> </li>
+                            </ul>
+                            <p></p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">February 2018 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">システムインテグレーター</h3>
+                            <div class="subheading mb-3 text-capitalize">C#, Silverlight, Java, Spring Framework, Jenkins</div>
+                            <ul class="list-inline dev-icons">
+                                <li class="list-inline-item"><i class="fab fa-csharp" title="C#"></i> </li>
+                                <li class="list-inline-item"><i class="fab fa-silverlight" title="Silverlight"></i> </li>
+                                <li class="list-inline-item"><i class="fab fa-java" title="Java"></i> </li>
+                                <li class="list-inline-item"><i class="fab fa-spring" title="Spring Framework"></i> </li>
+                                <li class="list-inline-item"><i class="fab fa-jenkins" title="Jenkins"></i> </li>
+                            </ul>
+                            <p></p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">April 2008 - January 2018</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Certifications -->
+            <section class="resume-section" id="certifications">
+                <div class="resume-section-content">
+                    <h2 class="mb-0">Certifications</h2>
+                    <div class="subheading mb-5">
+                        保有資格
+                    </div>
+                    <ul>
+                        <li>情報処理技術者試験</li>
+                        <ul class="fa-ul mb-0">
+                            <li>
+                                <span class="fa-li"><i class="fas fa-trophy text-warning"></i> </span>
+                                基本情報技術者
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-trophy text-warning"></i> </span>
+                                応用情報技術者
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-trophy text-warning"></i> </span>
+                                データベーススペシャリスト
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-trophy text-warning"></i> </span>
+                                ネットワークスペシャリスト
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-trophy text-warning"></i> </span>
+                                情報セキュリティスペシャリスト（旧）
+                            </li>
+                        </ul>
+                        <li>ベンダー試験</li>
+                        <ul class="fa-ul mb-0">
+                            <li>
+                                <span class="fa-li"><i class="fas fa-trophy text-warning"></i> </span>
+                                Sun Certified Java Programmer（Sun 認定 Java プログラマ）
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-trophy text-warning"></i> </span>
+                                Sun Certified Web Component Developer（Sun 認定 Webコンポーネントディベロッパ）
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </section>
+            <hr class="mb-0" />            
+            <!-- Gallery -->
+            <section class="resume-section" id="gallery">
+                <div class="resume-section-content">
+                    <h2 class="mb-0">Gallery</h2>
+                    <div class="subheading mb-5">
+                        ギャラリー
+                    </div>
+                    <div class="d-flex flex-wrap">
+                        <div class="img-thumbnail m-1 viewer">
+                            <img width="192px" height="192px" src="assets/img/gallery01_thumbnail.jpg">
+                        </div>
+                        <div class="img-thumbnail m-1 viewer">
+                            <img width="192px" height="192px" src="assets/img/gallery02_thumbnail.jpg">
+                        </div>
+                        <div class="img-thumbnail m-1 viewer">
+                            <img width="192px" height="192px" src="assets/img/gallery03_thumbnail.jpg">
+                        </div>
+                        <div class="img-thumbnail m-1 viewer">
+                            <img width="192px" height="192px" src="assets/img/gallery04_thumbnail.jpg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>    
+        <!-- Viewer.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.2/viewer.min.js" integrity="sha512-lzNiA4Ry7CjL8ewMGFZ5XD4wIVaUhvV3Ct9BeFmWmyq6MFc42AdOCUiuUtQgkrVVELHA1kT7xfSLoihwssusQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            new Viewer(document.getElementById("gallery"), {
+                title: false,
+                toolbar: false,
+                url(image) {
+                    return image.src.replace('_thumbnail', '');
+                }
+            });
+        </script>
+    </body>
+</html>
